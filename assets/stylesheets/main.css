@@ -1,0 +1,234 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/*
+  ========================================
+  Custom styles
+  ========================================
+*/
+
+body {
+  background: #fff;
+  color: #333;
+  font: 400 16px/22px "Walter Turncoat", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*
+  ========================================
+  Header
+  ========================================
+*/
+.header {
+  position: fixed;
+  top: 0;
+  height: 64px;
+  width: 100%;
+  z-index: 100;
+  margin-bottom: 0px;
+  background: #333;
+}
+.logo {
+  display: inline;
+  float: left;
+  height: 64px;
+  width: 68px;
+  background-color: red;
+  padding: 12px 15px;
+}
+.logo:hover {
+  width: 200px;
+}
+
+/*
+  ========================================
+  Navigation
+  ========================================
+*/
+.nav {
+  text-align: left;
+  height: 100%;
+}
+.nav li a {
+  display: block;
+  height: 100%;
+  padding: 15px 2vw;
+  color: #fff;
+}
+.nav li a.current-page {
+  color: #f00;
+}
+.nav a:hover {
+  color: #f00;
+}
+.nav li {
+  float: left;
+  height: 100%;
+  width: auto;
+  margin: 0;
+  padding-right: 9px;
+  background: transparent url("../images/header-nav-divider.png") no-repeat scroll right 45%;
+}
+.nav li:last-child {
+  margin-right: 0;
+  background-image: none;
+}
+.nav li:last-child a {
+  padding-right: 0;
+}
+.slashes {
+  position: relative;
+  left: 0;
+  background: #333;
+  margin: 0;
+  height: 100%;
+  float: left;
+  list-style: outside none none;
+}
+
+/*
+  ========================================
+  Main content
+  ========================================
+*/
+.main {
+  position: relative;
+  top: 0;
+  margin-top: 66px;
+  width: 100%;
+}
+
+/*
+  ========================================
+  Intro
+  ========================================
+*/
+.intro {
+  width: 100%;
+}
+.video-container {
+  position: relative;
+  width: 100%;
+}
+.video {
+  width: 100%
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  background-image:  url("../images/texture.png");
+  z-index: 20;
+}
+.marker {
+  position: absolute;
+  top: 0;
+  background-color: rgba(223, 223, 223, 0.5);
+  width: 100%;
+  height: 46px;
+  padding: 11px 62px;
+  z-index: 30;
+}
+.tagline {
+  position: absolute;
+  top: 0;
+  padding: 25% 0;
+  display: inline;
+  text-align: center;
+  vertical-align: middle;
+  max-height: 100%;
+  width: 100%;
+  z-index: 40;
+}
+/*
+  ========================================
+  Map
+  ========================================
+*/
+.map-title {
+  text-align: center;
+  padding-top: 66px;
+}
+.map {
+  padding-top: 66px;
+}
+
+/*
+  ========================================
+  Footer
+  ========================================
+*/
+.footer {
+  position: relative;
+}
