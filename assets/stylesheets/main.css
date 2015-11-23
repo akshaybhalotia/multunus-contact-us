@@ -222,8 +222,42 @@ body {
 }
 .map {
   padding-top: 66px;
+  width: 100%;
+  position: relative;
 }
-
+.contact-form-s {
+  position: relative;
+  width: 80%;
+  margin: 10px auto;
+  border: 8px ridge #888;
+  background-color: #fff;
+}
+form p {
+  margin: 10px;
+  width: 90%;
+}
+input {
+  margin: 0 10px;
+  width: 90%;
+  font: 400 16px/22px "Walter Turncoat", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+textarea {
+  margin: 0 10px;
+  margin-bottom: 10px;
+  width: 90%;
+  font: 400 16px/22px "Walter Turncoat", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/*
+  ========================================
+  Tweets
+  ========================================
+*/
+.tweets {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  padding: 20px 0;
+}
 /*
   ========================================
   Footer
@@ -231,4 +265,70 @@ body {
 */
 .footer {
   position: relative;
+  background-color: #E4E4E4;
+  width: 100%;
+  text-align: center;
+}
+.row {
+  width: 100%;
+  max-width: 960px;
+  min-width: 320px;
+  max-height: 570px;
+  margin: 0 auto;
+}
+.footer-item {
+  position: relative;
+  width: 50%;
+  float: left;
+  height: 100%;
+  padding: 0 10px;
+}
+.footer-item-l {
+  width: 100%;
+  background: transparent none no-repeat;
+}
+.footer-item p {
+  padding: 10px 0;
+  margin: 10px 0;
+}
+.footer-img {
+  max-width: 100%;
+  height: auto;
+  margin: ;
+}
+.hex-hide {
+    display: none;
+  }
+.copyright-info {
+  position: relative;
+  width: 50vw;
+  min-width: 280px;
+  margin: 10px auto;
+  margin-bottom: 0;
+  padding: 20px 0;
+  text-align: left;
+  border-top: 1px solid #999;
+}
+
+@media (min-width: 768px) {
+  .footer-item-s {
+    width: 33.333%;
+  }
+  .hexagon {
+    display: inline;
+  }
+}
+
+@media (min-width: 480px) {
+  .contact-form {
+    position: absolute;
+    left: 25%;
+    bottom: 0;
+    width: 30%;
+    min-width: 300px;
+    height: 70%;
+    border: 8px ridge #888;
+    z-index: 20;
+    background-color: #fff;
+  }
 }
