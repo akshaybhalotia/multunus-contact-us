@@ -1,5 +1,5 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
-  License: none (public domain)
+License: none (public domain)
 */
 
 html, body, div, span, applet, object, iframe,
@@ -47,9 +47,9 @@ table {
 }
 
 /*
-  ========================================
-  Clearfix
-  ========================================
+========================================
+Clearfix
+========================================
 */
 
 .group:before,
@@ -71,57 +71,74 @@ table {
 }
 
 /*
-  ========================================
-  Custom styles
-  ========================================
+========================================
+Custom styles
+========================================
 */
 
 body {
   background: #fff;
   color: #333;
-  font: 400 16px/22px "Walter Turncoat", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 400 16px/22px 'Montserrat', sans-serif;
+}
+h1 {
+  color: red;
+  font: 700 48px/56px 'Montserrat', sans-serif;
+}
+h2 {
+  font: 700 32px/36px 'Montserrat', sans-serif;
 }
 
 /*
-  ========================================
-  Header
-  ========================================
+========================================
+Header
+========================================
 */
 .header {
   position: fixed;
   top: 0;
-  height: 64px;
   width: 100%;
   z-index: 100;
   margin-bottom: 0px;
   background: #333;
 }
+
+/*
+========================================
+Navigation
+========================================
+*/
+.nav {
+  text-align: center;
+  margin: auto;
+  height: 100%;
+  text-transform: uppercase;
+  width: 100%;
+}
 .logo {
-  display: inline;
-  float: left;
+  display: block;
   height: 64px;
-  width: 68px;
+  width: 100%;
   background-color: red;
   padding: 12px 15px;
 }
-.logo:hover {
-  width: 200px;
+.nav ul {
+  background: #333;
+  margin: 0;
+  width: 100%;
+  float: left;
+  list-style: outside none none;
 }
-
-/*
-  ========================================
-  Navigation
-  ========================================
-*/
-.nav {
-  text-align: left;
-  height: 100%;
+.nav li {
+  width: 100%;
+  margin: 0;
+  background-color: #333;
 }
 .nav li a {
   display: block;
-  height: 100%;
-  padding: 15px 2vw;
+  padding: 4px 1vw;
   color: #fff;
+  text-decoration: none;
 }
 .nav li a.current-page {
   color: #f00;
@@ -129,47 +146,22 @@ body {
 .nav a:hover {
   color: #f00;
 }
-.nav li {
-  float: left;
-  height: 100%;
-  width: auto;
-  margin: 0;
-  padding-right: 9px;
-  background: transparent url("../images/header-nav-divider.png") no-repeat scroll right 45%;
-}
-.nav li:last-child {
-  margin-right: 0;
-  background-image: none;
-}
-.nav li:last-child a {
-  padding-right: 0;
-}
-.slashes {
-  position: relative;
-  left: 0;
-  background: #333;
-  margin: 0;
-  height: 100%;
-  float: left;
-  list-style: outside none none;
-}
 
 /*
-  ========================================
-  Main content
-  ========================================
+========================================
+Main content
+========================================
 */
 .main {
   position: relative;
-  top: 0;
-  margin-top: 66px;
+  margin-top: 274px;
   width: 100%;
 }
 
 /*
-  ========================================
-  Intro
-  ========================================
+========================================
+Intro
+========================================
 */
 .intro {
   width: 100%;
@@ -177,9 +169,11 @@ body {
 .video-container {
   position: relative;
   width: 100%;
+  background-image: url("../images/contact-page-poster.jpeg");
+  min-height: 300px;
 }
 .video {
-  width: 100%
+  display: none;
 }
 .overlay {
   position: absolute;
@@ -188,7 +182,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: transparent;
-  background-image:  url("../images/texture.png");
+  background-image: url("../images/texture.png");
   z-index: 20;
 }
 .marker {
@@ -203,7 +197,7 @@ body {
 .tagline {
   position: absolute;
   top: 0;
-  padding: 25% 0;
+  padding: 15% 0;
   display: inline;
   text-align: center;
   vertical-align: middle;
@@ -212,18 +206,19 @@ body {
   z-index: 40;
 }
 /*
-  ========================================
-  Map
-  ========================================
+========================================
+Map
+========================================
 */
 .map-title {
   text-align: center;
   padding-top: 66px;
 }
 .map {
-  padding-top: 66px;
-  width: 100%;
   position: relative;
+  margin-top: -210px;
+  padding: 276px 10% 0;
+  width: 100%;
 }
 .contact-form-s {
   position: relative;
@@ -239,29 +234,30 @@ form p {
 input {
   margin: 0 10px;
   width: 90%;
-  font: 400 16px/22px "Walter Turncoat", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 400 16px/22px 'Montserrat', sans-serif;
 }
 textarea {
   margin: 0 10px;
   margin-bottom: 10px;
   width: 90%;
-  font: 400 16px/22px "Walter Turncoat", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 400 16px/22px 'Montserrat', sans-serif;
 }
 /*
-  ========================================
-  Tweets
-  ========================================
+========================================
+Tweets
+========================================
 */
 .tweets {
-  width: 100%;
+  width: 30%;
   position: relative;
   text-align: center;
+  margin: 0 auto;
   padding: 20px 0;
 }
 /*
-  ========================================
-  Footer
-  ========================================
+========================================
+Footer
+========================================
 */
 .footer {
   position: relative;
@@ -294,11 +290,10 @@ textarea {
 .footer-img {
   max-width: 100%;
   height: auto;
-  margin: ;
 }
 .hex-hide {
-    display: none;
-  }
+  display: none;
+}
 .copyright-info {
   position: relative;
   width: 50vw;
@@ -309,26 +304,141 @@ textarea {
   text-align: left;
   border-top: 1px solid #999;
 }
+.footer-social {
+  position: relative;
+  height: 64px;
+  width: 70%;
+  margin: auto;
+}
+.footer-social li {
+  float: left;
+  width: 33.333%;
+}
 
-@media (min-width: 768px) {
+@media (min-width: 889px) {
+  .header {
+    position: fixed;
+    top: 0;
+    height: 64px;
+    width: 100%;
+    z-index: 100;
+    margin-bottom: 0px;
+    background: #333;
+  }
+  .logo {
+    display: inline;
+    float: left;
+    height: 64px;
+    width: 68px;
+    background-color: red;
+    padding: 12px 15px;
+  }
+  .logo:hover {
+    width: 200px;
+  }
+  .nav ul {
+    position: relative;
+    left: 0;
+    background: #333;
+    margin: 0;
+    height: 100%;
+    width: auto;
+    float: left;
+    list-style: outside none none;
+  }
+  .nav li a {
+    display: block;
+    height: 100%;
+    padding: 18px 0.25vw;
+    color: #fff;
+    text-decoration: none;
+  }
+  .nav li a.current-page {
+    color: #f00;
+  }
+  .nav a:hover {
+    color: #f00;
+  }
+  .nav li {
+    float: left;
+    height: 100%;
+    width: auto;
+    margin: 0;
+    padding-right: 9px;
+    background: transparent url("../images/header-nav-divider.png") no-repeat scroll right 45%;
+  }
+  .nav li:last-child {
+    margin-right: 0;
+    background-image: none;
+  }
+  .nav li:last-child a {
+    padding-right: 0;
+  }
+  .main {
+    position: relative;
+    margin-top: 64px;
+    width: 100%;
+  }
+  .map {
+    padding-top: 66px;
+    margin: 0;
+  }
+  .contact-form-s {
+    position: relative;
+    width: 80%;
+    margin: 10px auto;
+    border: 8px ridge #888;
+    background-color: #fff;
+  }
+}
+
+@media (min-width: 1025px) {
+  .nav li a {
+    display: block;
+    height: 100%;
+    padding: 18px 1vw;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+@media (min-width: 769px) {
   .footer-item-s {
     width: 33.333%;
+    max-height: 295px;
   }
   .hexagon {
     display: inline;
   }
+  .footer-social {
+    position: relative;
+    top: -135px;
+    height: 64px;
+    width: 197px;
+    margin: 0 auto;
+  }
 }
 
-@media (min-width: 480px) {
+@media (min-width: 481px) {
   .contact-form {
     position: absolute;
     left: 25%;
     bottom: 0;
     width: 30%;
     min-width: 300px;
+    max-height: 450px;
     height: 70%;
     border: 8px ridge #888;
     z-index: 20;
     background-color: #fff;
+  }
+  .video-container {
+    position: relative;
+    width: 100%;
+    background-image: none;
+  }
+  .video {
+    display: block;
+    width: 100%;
   }
 }
