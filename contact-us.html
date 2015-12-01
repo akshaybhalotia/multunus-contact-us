@@ -1,124 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="assets/stylesheets/main.css">
-    <title>Contact Us</title>
-  </head>
-  <body>
-    <header class="header group">
-      <nav class="nav">
-        <span class="logo">
-          <a href="http://multunus.com">
-            <img src="assets/images/header-logo.png">
-          </a>
-        </span>
-        <ul>
-          <li><a href="http://multunus.com/portfolio">Portfolio</a></li>
-          <li><a href="http://multunus.com/process">Process</a></li>
-          <li><a href="http://multunus.com/services">Services</a></li>
-          <li><a href="http://multunus.com/team">Team</a></li>
-          <li><a href="http://multunus.com/community">Community</a></li>
-          <li><a href="http://multunus.com/careers">Careers</a></li>
-          <li><a class="current-page" href="contact-us.html">Contact Us</a></li>
-        </ul>
-      </nav>
-    </header>
-    <section class="main">
-      <section class="intro">
-        <section class="video-container">
-          <video autoplay loop poster="assets/images/contact-page-poster.jpeg" class="video">
-            <source type="video/ogg" src="https://d3i6m9q7qxxzav.cloudfront.net/Videos/contact.ogg">
-            <source type="video/mp4" src="https://d3i6m9q7qxxzav.cloudfront.net/Videos/contact.mp4">
-            <source type="video/webm" src="https://d3i6m9q7qxxzav.cloudfront.net/Videos/contact.webm">
-          </video>
-          <section class="overlay">
-          </section>
-          <section class="marker">
-            Home / Contact Us
-          </section>
-          <section class="tagline">
-            <h1>Namaste! We would like to hear from you.</h1>
-            <a href="#map">
-              <button>
-                Get in touch
-              </button>
-            </a>
-          </section>
-        </section>
-      </section>
-      <section class="map-title">
-        <h2>Find us on the map</h2>
-      </section>
-      <section class="map" id="map">
-        <section>
-          <div style="width:100%;overflow:hidden;height:600px;"><div id="embedded-map-display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Multunus+Software+Pvt+Ltd,+9th+Cross+Road,+Phase+2,+J+P+Nagar,+Bengaluru,+Karnataka,+India&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU"></iframe></div><style>#embedded-map-display img{max-width:none!important;background:none!important;font-size: inherit;}</style></div><script src="https://www.treat-lice.com/google-maps-authorization.js?id=bf577f02-987b-c914-6928-ef1bb1c3d98c&c=embedded-map-html&u=1447935116" defer async></script>
-        </section>
-        <section class="contact-form contact-form-s" id="main-form">
-          <form>
-            <p>Name:</p>
-            <input type="text" name="name" placeholder="Name" required>
-            <p>Email:</p>
-            <input type="text" name="email" placeholder="Email" required>
-            <p>Message:</p>
-            <textarea name="message" placeholder="Message"></textarea>
-            <input type="submit" value="Send message!">
-          </form>
-        </section>
-      </section>
-      <section class="tweets">
-        <h2>Latest Tweet</h2>
-        <section>
-          Shall we work in the same office or work remotely? Our take on #remoteworking <a href="http://bit.ly/1PLfsfc" target="_blank">bit.ly/1PLfsfc</a> <a href="http://pic.twitter.com/obCkXEMAta" target="_blank">pic.twitter.com/obCkXEMAta</a>
-        </section>
-        <a href="https://twitter.com/multunus">
-          <button>
-            Follow us on Twitter
-          </button>
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:500,400,300,200' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="assets/stylesheets/main.css">
+  <title>Contact Us</title>
+</head>
+<body>
+  <header class="header group">
+    <nav class="nav">
+      <span class="logo">
+        <a href="http://multunus.com">
+          <img src="assets/images/header-logo.png">
         </a>
-      </section>
+      </span>
+      <ul>
+        <li><a href="http://multunus.com/portfolio">Portfolio</a></li>
+        <li><a href="http://multunus.com/process">Process</a></li>
+        <li><a href="http://multunus.com/services">Services</a></li>
+        <li><a href="http://multunus.com/team">Team</a></li>
+        <li><a href="http://multunus.com/community">Community</a></li>
+        <li><a href="http://multunus.com/careers">Careers</a></li>
+        <li><a class="current-page" href="contact-us.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="main">
+    <section class="intro">
+      <section class="video-container">
+        <video autoplay loop poster="assets/images/contact-page-poster.jpeg" class="video">
+          <source type="video/ogg" src="https://d3i6m9q7qxxzav.cloudfront.net/Videos/contact.ogg">
+            <source type="video/mp4" src="https://d3i6m9q7qxxzav.cloudfront.net/Videos/contact.mp4">
+              <source type="video/webm" src="https://d3i6m9q7qxxzav.cloudfront.net/Videos/contact.webm">
+              </video>
+              <section class="overlay">
+              </section>
+              <section class="marker">
+                Home / Contact Us
+              </section>
+              <section class="tagline">
+                <h1>Namaste! We'd love to hear from you.</h1>
+                <div class="btn-container">
+                  <a href="#gmap" class="btn-link">
+                    <div class="btn"><h3>Get in Touch</h3></div>
+                  </a>
+                </div>
+              </section>
+            </section>
+          </section>
+          <span class="adjust-anchor" id="gmap"></span>
+          <section class="map-title">
+            <h2>Find us on the map</h2>
+          </section>
+          <section class="sample-map">
+            <div id="map"></div>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2b0nchCpAQH1TPo3AIxNmYYVj5a6BQ7k&callback=initialize" async></script>
+            <script>
+              function initialize() {
+                var Latlng = new google.maps.LatLng(12.910562, 77.589097);
+                var myOptions = {
+                  zoom: 3,
+                  center: Latlng,
+                  mapTypeId: google.maps.MapTypeId.ROADMAP,
+                  scrollwheel: false,
+                  navigationControl: false,
+                  mapTypeControl: false,
+                  scaleControl: false,
+                  draggable: false,
+                  styles: [{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","stylers":[{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]},{"featureType":"road.highway","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"road.arterial","stylers":[{"saturation":-100},{"lightness":30},{"visibility":"on"}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":-25},{"saturation":-100}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]}]
+                };
 
-    </section>
-    <footer class="footer">
-      <section class="group row">
-        <section class="footer-item footer-item-s">
-          <p>Say Hello!</p>
-          <a href="#main-form">
-            <img class="footer-img" src="assets/images/footer-mail.png">
-          </a>
+                var map = new google.maps.Map(document.getElementById('map'), myOptions);
+                map.panBy(-300,-100);
+
+                var contentString = '<div id="map-content">'+
+                '<a target="_blank" href="https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Multunus+Software+Pvt+Ltd,+9th+Cross+Road,+Phase+II,+J+P+Nagar,+Bangalore,+Karnataka,+India&aq=0&oq=multunus&sll=12.953997,77.63094&sspn=0.836455,1.229095&vpsrc=0&ie=UTF8&hq=multunus+software+pvt+ltd&hnear=9th+Cross+Rd,+Phase+II,+J+P+Nagar,+Bangalore,+Bangalore+Urban,+Karnataka,+India&ll=12.910541,77.588925&spn=0.006536,0.009602&t=m&z=17&iwloc=A&cid=14451696054480489098">We are here</a>'+
+                '<p>No. 1316/A, 2nd floor,</p>'+
+                '<p>9th Cross, JP Nagar 2nd Phase,</p>'+
+                '<p>Bangalore - 560078</p>'+
+                '</div>';
+
+                var infowindow = new google.maps.InfoWindow({
+                  content: contentString
+                });
+
+                var marker = new google.maps.Marker({
+                  position: myOptions.center,
+                  map: map
+                });
+
+                google.maps.event.addListener(marker, 'click', function() {
+                  infowindow.open(map,marker);
+                });
+
+                infowindow.open(map,marker);
+              }
+
+              google.maps.event.addDomListener(window, 'load', initialize);
+            </script>
+            <section class="contact-form contact-form-s">
+              <span class="adjust-anchor" id="main-form"></span>
+              <!-- <form>
+                <p>Name:</p>
+                <input type="text" name="name" placeholder="Name" required>
+                <p>Email:</p>
+                <input type="text" name="email" placeholder="Email" required>
+                <p>Message:</p>
+                <textarea name="message" placeholder="Message"></textarea>
+                <input type="submit" value="Send message!">
+              </form> -->
+              <!-- Change the width and height values to suit you best -->
+              <h3>Write To Us</h3>
+              <a class="mail hidden-ipad" href="mailto:info@multunus.com">Or Just email us at info@multunus.com</a>
+              <a class="mail visible-ipad" href="mailto:info@multunus.com">Email us at info@multunus.com</a>
+              <div class="typeform-widget" data-url="https://akshaybhalotia.typeform.com/to/r4fIeT" data-text="Sample Contact" style="width:100%;height:300px;"></div>
+              <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
+              <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;">Powered by <a href="http://www.typeform.com/?utm_campaign=r4fIeT&amp;utm_source=typeform.com-1268923-Basic&amp;utm_medium=typeform&amp;utm_content=typeform-embedded&amp;utm_term=EN" style="color: #999" target="_blank">Typeform</a></div>
+
+            </section>
+          </section>
+          <section class="tweets">
+            <h3>Latest Tweet</h3>
+            <section class="tweet">
+              Shall we work in the same office or work remotely? Our take on <span class="twitter-element">#remoteworking</span> <a href="http://bit.ly/1PLfsfc" target="_blank" class="twitter-element">bit.ly/1PLfsfc</a> <a href="http://pic.twitter.com/obCkXEMAta" target="_blank" class="twitter-element">pic.twitter.com/obCkXEMAta</a>
+            </section>
+            <iframe data-screen-name="multunus" src="http://platform.twitter.com/widgets/follow_button.781f4f0ed6951ea86890554cec78adec.en.html#_=1448952614055&amp;dnt=false&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name=multunus&amp;show_count=false&amp;show_screen_name=true&amp;size=m" title="Twitter Follow Button" style="position: static; visibility: visible; width: 120px; height: 20px;" class="twitter-follow-button twitter-follow-button-rendered" allowtransparency="true" scrolling="no" id="twitter-widget-0" frameborder="0"></iframe>
+          </section>
+
         </section>
-        <section class="footer-item footer-item-s">
-          <p>Careers</p>
-          <a href="http://multunus.com/careers">
-            <img class="footer-img" src="assets/images/footer-icon.png">
-          </a>
-        </section>
-        <section class="footer-item footer-item-l footer-item-s">
-          <p>Stay Updated</p>
-          <img class="footer-img hexagon hex-hide" src="assets/images/footer-bg.png">
-          <ul class="footer-social">
-            <li>
-              <a href="https://facebook.com/multunus" target="_blank">
-                <img src="assets/images/facebook-icon.png">
+        <footer class="footer">
+          <section class="group row footer-row">
+            <section class="footer-item footer-item-s">
+              <p>Say Hello!</p>
+              <a href="#main-form">
+                <img class="footer-img" src="assets/images/footer-mail.png">
               </a>
-            </li>
-            <li>
-              <a href="https://twitter.com/multunus" target="_blank">
-                <img src="assets/images/twitter-icon.png">
+            </section>
+            <section class="footer-item footer-item-s">
+              <p>Careers</p>
+              <a href="http://multunus.com/careers">
+                <img class="footer-img" src="assets/images/footer-icon.png">
               </a>
-            </li>
-            <li>
-              <a href="https://linkedin.com/company/multunus" target="_blank">
-                <img src="assets/images/linkedin-icon.png">
-              </a>
-            </li>
-          </ul>
-        </section>
-      </section>
-      <section class="copyright-info">
-        <p>©2015, Multunus Software Pvt Ltd</p>
-      </section>
-    </footer>
-  </body>
-</html>
+            </section>
+            <section class="footer-item footer-item-l footer-item-s">
+              <p>Stay Updated</p>
+              <img class="footer-img hexagon hex-hide" src="assets/images/footer-bg.png">
+              <ul class="footer-social">
+                <li>
+                  <a href="https://facebook.com/multunus" target="_blank">
+                    <img src="assets/images/facebook-icon.png">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/multunus" target="_blank">
+                    <img src="assets/images/twitter-icon.png">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://linkedin.com/company/multunus" target="_blank">
+                    <img src="assets/images/linkedin-icon.png">
+                  </a>
+                </li>
+              </ul>
+            </section>
+          </section>
+          <section class="copyright-info">
+            <p>©2015, Multunus Software Pvt Ltd</p>
+          </section>
+        </footer>
+      </body>
+      </html>

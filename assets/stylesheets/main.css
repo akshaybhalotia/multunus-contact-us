@@ -79,14 +79,16 @@ Custom styles
 body {
   background: #fff;
   color: #333;
-  font: 400 16px/22px 'Montserrat', sans-serif;
+  font: 400 16px/18px 'Roboto', sans-serif;
 }
 h1 {
-  color: red;
-  font: 700 48px/56px 'Montserrat', sans-serif;
+  font: 200 48px/54px 'Roboto', sans-serif;
 }
 h2 {
-  font: 700 32px/36px 'Montserrat', sans-serif;
+  font: 300 36px/40px 'Roboto', sans-serif;
+}
+h3 {
+  font: 300 28px/32px 'Roboto', sans-serif;
 }
 
 /*
@@ -119,7 +121,7 @@ Navigation
   display: block;
   height: 64px;
   width: 100%;
-  background-color: red;
+  background-color: #bd1f3a;
   padding: 12px 15px;
 }
 .nav ul {
@@ -137,14 +139,14 @@ Navigation
 .nav li a {
   display: block;
   padding: 4px 1vw;
-  color: #fff;
+  color: white;
   text-decoration: none;
 }
 .nav li a.current-page {
-  color: #f00;
+  color: #bd1f3a;
 }
 .nav a:hover {
-  color: #f00;
+  color: #bd1f3a;
 }
 
 /*
@@ -154,8 +156,14 @@ Main content
 */
 .main {
   position: relative;
-  margin-top: 274px;
+  margin-top: 246px;
   width: 100%;
+}
+.adjust-anchor {
+  display: block;
+  height: 246px; /*same height as header*/
+  margin-top: -246px; /*same height as header*/
+  visibility: hidden;
 }
 
 /*
@@ -181,8 +189,8 @@ Intro
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: transparent;
-  background-image: url("../images/texture.png");
+  background-color: rgba(0, 0, 0, 0.25);
+  background-image: url("../images/grid-texture.png");
   z-index: 20;
 }
 .marker {
@@ -196,14 +204,17 @@ Intro
 }
 .tagline {
   position: absolute;
+  color: white;
   top: 0;
-  padding: 15% 0;
+  padding: 20% 0;
   display: inline;
   text-align: center;
-  vertical-align: middle;
   max-height: 100%;
   width: 100%;
   z-index: 40;
+}
+.btn-container {
+  display: none;
 }
 /*
 ========================================
@@ -212,35 +223,48 @@ Map
 */
 .map-title {
   text-align: center;
-  padding-top: 66px;
+  padding: 64px 0;
 }
-.map {
+.sample-map {
   position: relative;
-  margin-top: -210px;
-  padding: 276px 10% 0;
+  padding: 0;
+  margin: 0;
   width: 100%;
+  box-shadow: 0px -15px 20px rgba(51, 51, 51, 0.1) inset
+}
+#map {
+  text-align: center;
+  width: 100%;
+  height: 600px;
+}
+#map-content a {
+  color: #bd1f3a;
+  text-decoration: none;
+  font: 400 16px/22px 'Roboto', sans-serif;
+}
+#map-content a:hover {
+  text-decoration: underline;
 }
 .contact-form-s {
   position: relative;
   width: 80%;
-  margin: 10px auto;
-  border: 8px ridge #888;
+  height: 500px;
+  margin: 10px auto 0;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  padding: 30px;
   background-color: #fff;
 }
-form p {
-  margin: 10px;
-  width: 90%;
+.visible-ipad {
+  display: block;
 }
-input {
-  margin: 0 10px;
-  width: 90%;
-  font: 400 16px/22px 'Montserrat', sans-serif;
+.hidden-ipad {
+  display: none;
 }
-textarea {
-  margin: 0 10px;
-  margin-bottom: 10px;
-  width: 90%;
-  font: 400 16px/22px 'Montserrat', sans-serif;
+.mail {
+  padding: 18px 0;
+  color: #bd1f3a;
+  text-decoration: none;
 }
 /*
 ========================================
@@ -248,11 +272,20 @@ Tweets
 ========================================
 */
 .tweets {
-  width: 30%;
-  position: relative;
+  color: black;
+  width: 80%;
   text-align: center;
-  margin: 0 auto;
+  margin: 56px auto;
   padding: 20px 0;
+}
+.tweets a {
+  text-decoration: none;
+}
+.twitter-element {
+  color: #bd1f3a;
+}
+.tweet {
+  margin: 16px auto;
 }
 /*
 ========================================
@@ -264,13 +297,17 @@ Footer
   background-color: #E4E4E4;
   width: 100%;
   text-align: center;
+  padding-top: 1px;
 }
 .row {
   width: 100%;
   max-width: 960px;
   min-width: 320px;
-  max-height: 570px;
   margin: 0 auto;
+}
+.footer-row {
+  max-height: 570px;
+  margin: 80px auto;
 }
 .footer-item {
   position: relative;
@@ -284,8 +321,10 @@ Footer
   background: transparent none no-repeat;
 }
 .footer-item p {
+  font-size: 24px;
+  font-weight: 300;
   padding: 10px 0;
-  margin: 10px 0;
+  margin: 20px 0;
 }
 .footer-img {
   max-width: 100%;
@@ -302,7 +341,7 @@ Footer
   margin-bottom: 0;
   padding: 20px 0;
   text-align: left;
-  border-top: 1px solid #999;
+  border-top: 1px solid #bfbfbf;
 }
 .footer-social {
   position: relative;
@@ -330,7 +369,7 @@ Footer
     float: left;
     height: 64px;
     width: 68px;
-    background-color: red;
+    background-color: #bd1f3a;
     padding: 12px 15px;
   }
   .logo:hover {
@@ -354,10 +393,10 @@ Footer
     text-decoration: none;
   }
   .nav li a.current-page {
-    color: #f00;
+    color: #bd1f3a;
   }
   .nav a:hover {
-    color: #f00;
+    color: #bd1f3a;
   }
   .nav li {
     float: left;
@@ -379,20 +418,35 @@ Footer
     margin-top: 64px;
     width: 100%;
   }
-  .map {
-    padding-top: 66px;
+  .adjust-anchor {
+    display: block;
+    height: 64px; /*same height as header*/
+    margin-top: -64px; /*same height as header*/
+    visibility: hidden;
+  }
+  .sample-map {
+    padding: 0;
     margin: 0;
   }
   .contact-form-s {
     position: relative;
     width: 80%;
-    margin: 10px auto;
-    border: 8px ridge #888;
+    height: 500px;
+    margin: 10px auto 0;
+    padding: 30px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
     background-color: #fff;
   }
 }
 
 @media (min-width: 1025px) {
+  .visible-ipad {
+    display: none;
+  }
+  .hidden-ipad {
+    display: block;
+  }
   .nav li a {
     display: block;
     height: 100%;
@@ -405,7 +459,7 @@ Footer
 @media (min-width: 769px) {
   .footer-item-s {
     width: 33.333%;
-    max-height: 295px;
+    max-height: 300px;
   }
   .hexagon {
     display: inline;
@@ -414,23 +468,65 @@ Footer
     position: relative;
     top: -135px;
     height: 64px;
-    width: 197px;
+    width: 150px;
     margin: 0 auto;
+  }
+  .btn-container {
+    position: relative;
+    display: table;
+    top: 32px;
+    margin: 0 auto;
+    width: 250px;
+    height: 60px;
+    background-color: #d22341;
+    z-index: 40;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  }
+  .btn-container a {
+    color: white;
+    text-decoration: none;
+  }
+  .btn-container:hover {
+    background-color: #b01732;
+  }
+  .btn-link {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .btn {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+  }
+  .tweets {
+    width: 30%;
   }
 }
 
 @media (min-width: 481px) {
+  h1 {
+    color: white;
+    font: 200 64px/72px 'Roboto', sans-serif;
+  }
+  h2 {
+    font: 300 48px/54px 'Roboto', sans-serif;
+  }
+  h3 {
+    font: 300 32px/36px 'Roboto', sans-serif;
+  }
   .contact-form {
     position: absolute;
-    left: 25%;
+    left: 20%;
     bottom: 0;
-    width: 30%;
-    min-width: 300px;
-    max-height: 450px;
-    height: 70%;
-    border: 8px ridge #888;
+    width: 320px;
+    height: 390px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    padding: 30px;
     z-index: 20;
     background-color: #fff;
+    box-sizing: content-box;
   }
   .video-container {
     position: relative;
