@@ -82,7 +82,7 @@ body {
   font: 400 16px/18px 'Roboto', sans-serif;
 }
 h1 {
-  font: 200 48px/54px 'Roboto', sans-serif;
+  font: 200 44px/48px 'Roboto', sans-serif;
 }
 h2 {
   font: 300 36px/40px 'Roboto', sans-serif;
@@ -111,7 +111,7 @@ Navigation
 ========================================
 */
 .nav {
-  text-align: center;
+  text-align: inherit;
   margin: auto;
   height: 100%;
   text-transform: uppercase;
@@ -133,12 +133,19 @@ Navigation
 }
 .nav li {
   width: 100%;
+  height: 40px;
+  line-height: 40px;
   margin: 0;
-  background-color: #333;
+  border-bottom: 1px solid #323232;
+  background: #202020 url("../images/arrow-right-navbar.png") no-repeat scroll 12px center;
+}
+.nav li:first-child {
+  border-top: 1px solid #323232;
 }
 .nav li a {
   display: block;
-  padding: 4px 1vw;
+  padding: 0 1vw;
+  margin-left: 36px;
   color: white;
   text-decoration: none;
 }
@@ -156,13 +163,13 @@ Main content
 */
 .main {
   position: relative;
-  margin-top: 246px;
+  margin-top: 344px;
   width: 100%;
 }
 .adjust-anchor {
   display: block;
-  height: 246px; /*same height as header*/
-  margin-top: -246px; /*same height as header*/
+  height: 344px; /*same height as header*/
+  margin-top: -344px; /*same height as header*/
   visibility: hidden;
 }
 
@@ -178,7 +185,7 @@ Intro
   position: relative;
   width: 100%;
   background-image: url("../images/contact-page-poster.jpeg");
-  min-height: 300px;
+  min-height: 400px;
 }
 .video {
   display: none;
@@ -199,14 +206,14 @@ Intro
   background-color: rgba(223, 223, 223, 0.5);
   width: 100%;
   height: 46px;
-  padding: 11px 62px;
+  padding: 14px 62px;
   z-index: 30;
 }
 .tagline {
   position: absolute;
   color: white;
-  top: 0;
-  padding: 20% 0;
+  top: 15%;
+  padding: 20% 5%;
   display: inline;
   text-align: center;
   max-height: 100%;
@@ -253,7 +260,7 @@ Map
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   padding: 30px;
-  background-color: #fff;
+  background-color: #EEE;
 }
 .visible-ipad {
   display: block;
@@ -286,6 +293,7 @@ Tweets
 }
 .tweet {
   margin: 16px auto;
+  line-height: 24px;
 }
 /*
 ========================================
@@ -335,8 +343,9 @@ Footer
 }
 .copyright-info {
   position: relative;
-  width: 50vw;
+  width: 100%;
   min-width: 280px;
+  max-width: 960px;
   margin: 10px auto;
   margin-bottom: 0;
   padding: 20px 0;
@@ -354,7 +363,7 @@ Footer
   width: 33.333%;
 }
 
-@media (min-width: 889px) {
+@media only screen and (min-width: 889px) {
   .header {
     position: fixed;
     top: 0;
@@ -385,10 +394,14 @@ Footer
     float: left;
     list-style: outside none none;
   }
+  .nav li:first-child {
+    border-top: none;
+  }
   .nav li a {
     display: block;
     height: 100%;
-    padding: 18px 0.25vw;
+    padding: 24px 0.25vw;
+    margin: auto;
     color: #fff;
     text-decoration: none;
   }
@@ -404,7 +417,8 @@ Footer
     width: auto;
     margin: 0;
     padding-right: 9px;
-    background: transparent url("../images/header-nav-divider.png") no-repeat scroll right 45%;
+    line-height: inherit;
+    background: transparent url("../images/header-nav-divider.png") no-repeat scroll right 50%;
   }
   .nav li:last-child {
     margin-right: 0;
@@ -436,11 +450,11 @@ Footer
     padding: 30px;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
-    background-color: #fff;
+    background-color: #EEE;
   }
 }
 
-@media (min-width: 1025px) {
+@media only screen and (min-width: 1025px) {
   .visible-ipad {
     display: none;
   }
@@ -450,13 +464,14 @@ Footer
   .nav li a {
     display: block;
     height: 100%;
-    padding: 18px 1vw;
+    padding: 24px 1vw;
+    margin: auto;
     color: #fff;
     text-decoration: none;
   }
 }
 
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .footer-item-s {
     width: 33.333%;
     max-height: 300px;
@@ -473,7 +488,7 @@ Footer
   }
   .btn-container {
     position: relative;
-    display: table;
+    display: block;
     top: 32px;
     margin: 0 auto;
     width: 250px;
@@ -491,20 +506,25 @@ Footer
     background-color: #b01732;
   }
   .btn-link {
-    display: table-cell;
-    vertical-align: middle;
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .btn {
     text-align: center;
     width: 100%;
     height: 100%;
+    font: 300 28px/32px 'Roboto', sans-serif;
   }
   .tweets {
     width: 30%;
   }
 }
 
-@media (min-width: 481px) {
+@media only screen and (min-width: 481px) {
   h1 {
     color: white;
     font: 200 64px/72px 'Roboto', sans-serif;
