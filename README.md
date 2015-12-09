@@ -1,5 +1,3 @@
 # multunus-contact-us
 Attempted recreation of http://multunus.com/contact/
-
-#Known issues
-- Menu (navigation) bar does not restructure to hide elements
+Visit at https://multunus-contact.herokuapp.com/
